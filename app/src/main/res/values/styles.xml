@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CalculadoraEstilo" parent="AppTheme">
+        <item name="android:background">#272727</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="BotonesEstilo" parent="@android:style/Widget.Material.Light.Button">
+        <item name="android:layout_margin">5px</item>
+    </style>
+
+    <style name="ResultadoEstilo" parent="@android:style/Widget.Material.Light.TextView">
+        <item name="android:paddingRight">20px</item>
+    </style>
+
+</resources>

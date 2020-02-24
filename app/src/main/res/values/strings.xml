@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Calculadora 2</string>
+    <string name="textViewMiNombre">Héctor Granja Cortés</string>
+    <string name="textViewResultado">0</string>
+    <string name="button0">0</string>
+    <string name="button1">1</string>
+    <string name="button2">2</string>
+    <string name="button3">3</string>
+    <string name="button4">4</string>
+    <string name="button5">5</string>
+    <string name="button6">6</string>
+    <string name="button7">7</string>
+    <string name="button8">8</string>
+    <string name="button9">9</string>
+    <string name="buttonComa">,</string>
+    <string name="buttonMultiplicar">x</string>
+    <string name="buttonSumar">+</string>
+    <string name="buttonRestar">-</string>
+    <string name="buttonDividir">÷</string>
+    <string name="buttonElevacionCuadrado">X<sup>2</sup></string>
+    <string name="buttonElevacionCubo">X<sup>3</sup></string>
+    <string name="buttonElevacionY">X<sup>y</sup></string>
+    <string name="buttonPercent">%</string>
+    <string name="buttonIgual">=</string>
+    <string name="buttonC">c</string>
+</resources>

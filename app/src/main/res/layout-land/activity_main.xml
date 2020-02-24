@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.calculadora2.MainActivity"
+    tools:layout_editor_absoluteY="73dp">
+
+    <TextView
+        android:id="@+id/textViewResultado"
+        style="@style/ResultadoEstilo"
+        android:layout_width="680dp"
+        android:layout_height="77dp"
+        android:text="@string/textViewResultado"
+        android:textAlignment="textEnd"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayoutBotonesSuperiores"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonC"
+        style="@style/BotonesEstilo"
+        android:layout_width="190dp"
+        android:layout_height="0dp"
+        android:background="@drawable/boton2_background"
+        android:text="@string/buttonC"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonIgual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResultado"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonIgual"
+        style="@style/BotonesEstilo"
+        android:layout_width="157dp"
+        android:layout_height="132dp"
+        android:layout_margin="5px"
+        android:layout_weight="1"
+        android:background="@drawable/boton2_background"
+        android:text="@string/buttonIgual"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tableLayoutBotones"
+        app:layout_constraintStart_toEndOf="@+id/buttonC"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayoutBotonesSuperiores" />
+
+    <TableLayout
+        android:id="@+id/tableLayoutBotones"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonIgual"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayoutBotonesSuperiores">
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/BotonesEstilo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/boton1_background"
+                android:layerType="none"
+                android:text="@string/button1"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/BotonesEstilo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/boton1_background"
+                android:text="@string/button2"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/BotonesEstilo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/boton1_background"
+                android:text="@string/button3"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/buttonMultiplicar"
+                style="@style/BotonesEstilo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/boton2_background"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/buttonMultiplicar"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:layout_editor_absoluteX="-20dp"
+            tools:layout_editor_absoluteY="293dp">
+
+            <Button
+                android:id="@+id/button0"
+                style="@style/BotonesEstilo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.66"
+                android:background="@drawable/boton1_background"
+                android:text="@string/button0"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/buttonComa"
+                style="@style/BotonesEstilo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.32"
+                android:background="@drawable/boton1_background"
+                android:text="@string/buttonComa"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/buttonDividir"
+                style="@style/BotonesEstilo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.32"
+                android:background="@drawable/boton2_background"
+                android:text="@string/buttonDividir"
+                android:textSize="36sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayoutBotonesSuperiores"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5px"
+        app:layout_constraintBottom_toTopOf="@+id/buttonIgual"
+        app:layout_constraintEnd_toEndOf="@+id/tableLayoutBotones"
+        app:layout_constraintStart_toEndOf="@+id/buttonC"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResultado">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/buttonXy"
+                style="@style/BotonesEstilo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/boton1_background"
+                android:text="@string/buttonElevacionY"
+                android:textAllCaps="false"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/buttonPorcent"
+                style="@style/BotonesEstilo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/boton1_background"
+                android:text="@string/buttonPercent"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/button7"
+                style="@style/BotonesEstilo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/boton1_background"
+                android:text="@string/button7"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button8"
+                style="@style/BotonesEstilo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/boton1_background"
+                android:text="@string/button8"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button9"
+                style="@style/BotonesEstilo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/boton1_background"
+                android:text="@string/button9"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/buttonSumar"
+                style="@style/BotonesEstilo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/boton2_background"
+                android:text="@string/buttonSumar"
+                android:textSize="30sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/buttonX2"
+                style="@style/BotonesEstilo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/boton1_background"
+                android:text="@string/buttonElevacionCuadrado"
+                android:textAllCaps="false"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/buttonX3"
+                style="@style/BotonesEstilo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/boton1_background"
+                android:text="@string/buttonElevacionCubo"
+                android:textAllCaps="false"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/BotonesEstilo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/boton1_background"
+                android:text="@string/button4"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button5"
+                style="@style/BotonesEstilo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/boton1_background"
+                android:text="@string/button5"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button6"
+                style="@style/BotonesEstilo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/boton1_background"
+                android:text="@string/button6"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/buttonRestar"
+                style="@style/BotonesEstilo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/boton2_background"
+                android:text="@string/buttonRestar"
+                android:textSize="36sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
