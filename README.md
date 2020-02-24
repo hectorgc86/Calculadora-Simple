@@ -1,2 +1,2 @@
 # Calculadora-Simple
-Calculadora simple desarrollada en Kotlin
+Calculadora simple para Android desarrollada en Kotlin
